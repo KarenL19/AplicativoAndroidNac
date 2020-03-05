@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20sp">
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:gravity="center"
+            android:text="Web Portal"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp">
+
+            <ImageView
+                android:id="@+id/americanas"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:src="@drawable/americanas" />
+
+            <ImageView
+                android:id="@+id/buscape"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="0dp"
+                android:layout_toEndOf="@+id/americanas"
+                android:src="@drawable/buscape" />
+
+            <ImageView
+                android:id="@+id/ebay"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_below="@+id/americanas"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="@+id/americanas"
+                android:src="@drawable/ebay" />
+
+            <ImageView
+                android:id="@+id/magalu"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_below="@+id/buscape"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="40dp"
+                android:layout_toEndOf="@+id/ebay"
+                android:src="@drawable/magalu" />
+
+            <ImageView
+                android:id="@+id/mercadolivre"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_below="@+id/ebay"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/mercadolivre" />
+
+            <ImageView
+                android:id="@+id/netshoes"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_below="@+id/magalu"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="40dp"
+                android:layout_toEndOf="@+id/mercadolivre"
+                android:src="@drawable/netshoes" />
+
+            <ImageView
+                android:id="@+id/submarino"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_below="@+id/mercadolivre"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/submarino" />
+
+            <ImageView
+                android:id="@+id/webmotors"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_below="@+id/netshoes"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="40sp"
+                android:layout_toEndOf="@+id/submarino"
+                android:src="@drawable/webmotors" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Sobre"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="750sp"
+                android:id="@+id/btSobre"/>
+
+
+        </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
